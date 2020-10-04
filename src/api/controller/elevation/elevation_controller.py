@@ -1,7 +1,5 @@
-import numpy
 import pandas as pd
-from fastapi import APIRouter, Depends, Query, File, UploadFile, HTTPException
-from starlette.status import HTTP_400_BAD_REQUEST
+from fastapi import APIRouter, Depends, Query, File, UploadFile
 
 from src.api.controller.elevation.dto.locations_input_dto import (
     LocationsInputDto,
