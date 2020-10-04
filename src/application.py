@@ -4,6 +4,8 @@ from starlette.exceptions import HTTPException
 
 from src.api.controller.cache import cache_controller
 from src.api.controller.common import common_controller
+from src.api.controller.elevation import elevation_controller
+
 from src.api.handler.exception_handler import (
     http_exception_handler,
     validation_exception_handler,
@@ -34,5 +36,6 @@ def create_app():
         common_controller.router, prefix="/api/v1/common", tags=["common"]
     )
     app.include_router(cache_controller.router, prefix="/api/v1/cache", tags=["cache"])
+    app.include_router(elevation_controller.router, prefix="/api/v1/elevations", tags=["elevation"])
 
     return app
