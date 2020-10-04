@@ -15,7 +15,7 @@ from src.api.docs.openapi import (
 )
 from src.api.handler.error_response import ErrorResponse
 from src.core.exception.application_exception import ApplicationException
-from src.core.service.elevation_service import ElevationService
+from src.core.service.elevation.elevation_service import ElevationService
 
 router = APIRouter()
 
@@ -131,7 +131,7 @@ def get_elevations_from_file(
         First column should be name. \n
         Second column should be latitude. Latitude should be between -90 and 90 \n
         Third column should be longitude. Longitude should be between -180 and 180 \n
-        If location interval rule have not, API does not calculate for this item. \n
+        If location interval rule have not, API does not calculate for these item. \n
         For example (File Content);
             loc-1;37.34;32.23
             loc-1;36.34;34.23
