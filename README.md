@@ -16,7 +16,7 @@ http://127.0.0.1:9998/
 ```
 #### Examples
 
-![Image 1](resources/docs/4.png) 
+![Image 1](resources/docs/4.png)
 
 ![Image 2](resources/docs/1.png)
 
