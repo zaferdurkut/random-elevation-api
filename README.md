@@ -3,6 +3,11 @@ With custom FastAPI template, you can get random elevations from single multiple
 ## Build
 From your project directory, start up your application by running
 
+Firstly create a env file
+```bash
+cp default.env .env
+```
+After
 ```bash
 docker-compose up
 ```
